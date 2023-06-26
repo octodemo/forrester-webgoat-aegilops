@@ -27,6 +27,7 @@ public class CSRFIntegrationTest extends IntegrationTest {
       "<!DOCTYPE html><html><body><form action=\"WEBGOATURL\" method=\"POST\">\n"
           + "<input type=\"hidden\" name=\"csrf\" value=\"thisisnotchecked\"/>\n"
           + "<input type=\"submit\" name=\"submit\" value=\"assignment 3\"/>\n"
+          + "<h2>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</h2>\n"
           + "</form></body></html>";
 
   private static final String trickHTML4 =
