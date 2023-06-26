@@ -1,6 +1,0 @@
-queries:
-  - uses: security-extended
-query-filters:
-  - include:
-      id: java/log4j-injection
-debug: true
