@@ -31,7 +31,8 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        queries: advanced-security/codeql-queries/${{ matrix.language }}/suites/codeql-${{ matrix.language }}.qls@main
+        # queries: advanced-security/codeql-queries/${{ matrix.language }}/suites/codeql-${{ matrix.language }}.qls@main
+        packs: +advanced-security/codeql-${{ matrix.language }}
     
     - if: matrix.language == 'java'  
       name: Set up java 17
