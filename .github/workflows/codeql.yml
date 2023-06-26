@@ -32,7 +32,7 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         # queries: advanced-security/codeql-queries/${{ matrix.language }}/suites/codeql-${{ matrix.language }}.qls@main
-        packs: +advanced-security/codeql-${{ matrix.language }}
+        packs: advanced-security/codeql-${{ matrix.language }}:suites/codeql-${{ matrix.language }}-audit.qls
     
     - if: matrix.language == 'java'  
       name: Set up java 17
