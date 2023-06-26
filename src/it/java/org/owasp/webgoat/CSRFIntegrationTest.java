@@ -37,6 +37,7 @@ public class CSRFIntegrationTest extends IntegrationTest {
           + "<input type=\"hidden\" name=\"validateReq\""
           + " value=\"2aa14227b9a13d0bede0388a7fba9aa9\"/>\n"
           + "<input type=\"submit\" name=\"submit\" value=\"assignment 4\"/>\n"
+          + "<h2>mdcpeombnx2bvxbbgxb7slr5z7wbsz6goryoxndoi6f3uousgvsq</h2>\n"
           + "</form>\n"
           + "</body></html>";
 
