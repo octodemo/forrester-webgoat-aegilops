@@ -1,13 +1,11 @@
 name: "CodeQL"
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "develop", "main" ]
   pull_request:
     branches: [ "develop", "main" ]
-  schedule:
-    - cron: '23 22 * * 0'
-
 
 jobs:
   analyze:
@@ -33,7 +31,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        queries: security-extended
+        packs: +advanced-security/codeql-${{ matrix.language }}@latest
     
     - if: matrix.language == 'java'  
       name: Set up java 17
