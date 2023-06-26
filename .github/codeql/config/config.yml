@@ -1,2 +1,3 @@
 debug: true
-queries: security-extended
+queries: 
+  - security-extended
